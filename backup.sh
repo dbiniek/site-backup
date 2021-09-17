@@ -35,3 +35,6 @@ done
 for domain in $(cat /tmp/domains.txt) ; do
 	tar -czf $DEST/$domain-$DATE.tar.gz /var/www/$domain
 done
+
+#cleanup
+rm -f /tmp/domains.txt
